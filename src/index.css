@@ -38,3 +38,27 @@ label {
 input {
   padding: 5px;
 }
+
+.input {
+  border: 1px solid black;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .App {
+    width: 90%;
+  }
+  form {
+    width:80%;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .App {
+    width: 70%;
+  }
+  form {
+    width: 70%;
+    padding: 0;
+  }
+}

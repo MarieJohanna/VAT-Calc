@@ -50,11 +50,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1>VAT calculation</h1>
+        <h1>VAT Calculator</h1>
 
         <form>
           <div className="radio_container">
-            <label>VAT (%)</label>
+            <label>VAT (%):</label>
             <div className="radio">
               <input
                 type="radio"
@@ -78,23 +78,25 @@ class App extends React.Component {
           </div>
 
           <div className="container">
-            <label htmlFor="incl-vat">Amount incl VAT</label>
+            <label htmlFor="incl-vat">Amount incl VAT:</label>
             <input
+              className="input"
               type="number"
               name="amount-incl-vat"
               value={this.state.incVat}
               onChange={this.handleIncVatChange} />
           </div>
           <div className="container">
-            <label htmlFor="excl-vat">Amount excl VAT</label>
+            <label htmlFor="excl-vat">Amount excl VAT:</label>
             <input
+              className="input"
               type="number"
               name="amount-excl-vat"
               value={this.state.exVat}
               onChange={this.handleExVatChange} />
           </div>
           <div className="container">
-            <label htmlFor="amount-vat">VAT amount</label>
+            <label htmlFor="amount-vat">VAT amount:</label>
             <input
               disabled
               type="number"
