@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+    background-color: #e4deea;
+}
+
+.App {
+  width: 50%;
+  margin: 70px auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form {
+  width: 50%;
+  padding: 5%;
+}
+
+.radio_container, .container {
+  padding:0;
+  margin:0;
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+label {
+  /* font-size: 20px; */
+}
+
+input {
+  padding: 5px;
+}
